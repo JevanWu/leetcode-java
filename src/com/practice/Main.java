@@ -1,19 +1,13 @@
 package com.practice;
 
-import com.practice.problems.easy.ImplementQueueUsingStacks;
-
-import java.util.ArrayList;
+import com.practice.problems.hard.SlidingWindowMaximum;
 
 public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        var object = new ImplementQueueUsingStacks();
-        var a = new ArrayList<Integer>();
-        object.push(1);
-        object.push(2);
-        System.out.println(object.peek());
-        System.out.println(object.pop());
-        System.out.println(object.empty());
+        var sliding = new SlidingWindowMaximum();
+        var nums = new int[]{ 1,3,-1,-3,5,3,6,7 };
+        sliding.maxSlidingWindow(nums, 3);
     }
 }
